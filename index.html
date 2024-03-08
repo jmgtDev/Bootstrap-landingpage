@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Landing Page com Bootstrap</title>
+</head>
+<body class="container-fluid pb-5">
+    <div>
+        <form class="container mb-4 mt-5 p-4">
+            <div class="d-flex justify-content-center">
+                <img src="./Images/logoOneBitDark.png" alt="logo" class="img-fluid toplogo mb-4">
+            </div>
+            <div class="d-flex flex-column mb-4">
+                <p class="mb-2">1 - Qual o seu nome?</p>
+                <!--<div class="d-flex mb-3">
+                    <label class="form-label">Primeiro nome:</label>
+                    <input type="text" class="input-name ps-2" placeholder="Digite Aqui:">
+                </div>-->
+                <div class="input-group mb-3"> <!--.input-group faz com que os elementos fiquem na mesma linha. Label e input na mesma linha, formando um grupo-->
+                    <label class="input-group-text" for="first-name">Primeiro Nome:</label> <!--.input-group-text faz toda a estilização do label, com a cor de fundo, bordas e padding-->
+                    <input type="text" class="form-control" placeholder="Digite Aqui:" id="first-name">
+                </div>
+                <!--<div class="d-flex">
+                    <label class="form-label">Segundo nome:</label>
+                    <input type="text" class="input-name ps-2" placeholder="Digite Aqui:">
+                </div>-->
+                <div class="input-group"> <!--.input-group faz com que os elementos fiquem na mesma linha. Label e input na mesma linha, formando um grupo-->
+                    <label class="input-group-text" for="second-name">Segundo Nome:</label> <!--.input-group-text faz toda a estilização do label, com a cor de fundo, bordas e padding-->
+                    <input type="text" class="form-control" placeholder="Digite Aqui:" id="second-name">
+                </div>
+            </div>
+            <div class="d-flex flex-column mb-4">
+                <p class="mb-2">2 - Qual o seu gênero?</p>
+                <div>
+                    <input type="radio" id="man" name="gender" value="man">
+                    <label>Homem</label>
+                </div>
+                <div>
+                    <input type="radio" id="woman" name="gender" value="woman">
+                    <label>Mulher</label>
+                </div>
+                <div>
+                    <input type="radio" id="none" name="gender" value="none">
+                    <label>Prefiro não informar</label>
+                </div>
+            </div>
+            <div class="d-flex flex-column mb-4">
+                <p class="mb-2">3 - Marque os treinamentos que você fez:</p>
+                <div class="form-switch"> <!--são necessários tanto o .form-switch no elemento pai como o .form-check-input no input para a estilizar o input como um switch-->
+                    <input type="checkbox" class="form-check-input">
+                    <label>Treinamento básico de astronauta</label>
+                </div>
+                <div class="form-switch">
+                    <input type="checkbox" class="form-check-input">
+                    <label>Treinamento físico básico</label>
+                </div>  
+                <div class="form-switch">
+                    <input type="checkbox" class="form-check-input">
+                    <label>Treinamento avançado de astronauta</label>
+                </div>  
+                <div class="form-switch">
+                    <input type="checkbox" class="form-check-input">
+                    <label>Treinamento físico intenso</label>
+                </div>     
+            </div>
+            <div>
+                <p>4 - Quais você acha que são suas qualidades?</p>
+                <div class="form-check-inline"> <!--.form-check-inline deixa todos os inputs na mesma linha e dá um espaçamento entre eles. No caso, só quebra para a próxima linha se não tiver mais espaço.-->
+                    <input type="checkbox" id="opcao1" name="opcao1" value="opcao1">
+                    <label>Proativo</label>
+                </div>
+                <div class="form-check-inline">
+                    <input type="checkbox" id="opcao2" name="opcao2" value="opcao2">
+                    <label>Resistente</label>
+                </div>
+                <div class="form-check-inline">
+                    <input type="checkbox" id="opcao3" name="opcao3" value="opcao3">
+                    <label>Não vomito fácil</label>
+                </div>
+                <div class="form-check-inline">
+                    <input type="checkbox" id="opcao4" name="opcao4" value="opcao4">
+                    <label>Não temo marciano</label>
+                </div>
+                <div class="form-check-inline">
+                    <input type="checkbox" id="opcao5" name="opcao5" value="opcao5">
+                    <label>Já vi todos os star wars</label>
+                </div>
+            </div>
+            <div  class="text-center mt-4"> <!--dá para alinhar o elemento com .text-start, .text-center e .text-end. Tudo sem precisar do flexbox.-->
+                <button type="button" class="btn btn-outline-danger btn1">Enviar</button>
+            </div>
+            </form>
+        <footer class="text-center">Feito por João Marcos &copy; Todos os direitos reservados - 2024</footer>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

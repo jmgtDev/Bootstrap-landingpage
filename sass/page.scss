@@ -1,0 +1,49 @@
+*{
+    color: white;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+.first-name-div{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.container{
+    max-width: 390px;
+    background-color: $background-color;
+}
+.toplogo{
+    max-width: 160px;
+}
+body{
+    background-image: url(../Images/backgroundLp.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+.btn1{
+    color: $button-color;
+    border: 1px solid $button-color;
+    &:hover{
+        color: white;
+        background-color: $button-color;
+    }
+}
+/*.input-name{
+    border: 0px;
+    flex-grow: 1;
+    border: 1px solid #E9ECEF;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+}*/
+/*.form-label{
+    border: 1px solid #E9ECEF;
+    margin: 0px;
+    color: black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #E9ECEF;
+    padding: 6px;
+}*/
